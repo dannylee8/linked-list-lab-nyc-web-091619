@@ -31,3 +31,14 @@ function addressAt (idx, head, collection) {
     return node.next
   }
 }
+
+function indexAt (node, collection, head) {
+  let currentNode = headNode(head, collection)
+  let currentIdx = 0
+  console.log(currentNode)
+  while (currentNode !== node) {
+    currentIdx++
+    currentNode = next(currentNode, collection)
+  }
+  return currentIdx
+}
