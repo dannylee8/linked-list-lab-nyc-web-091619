@@ -23,3 +23,6 @@ function nodeAt(idx, head, collection) {
   return daNode;
 }
 
+function addressAt () {
+  
+}
