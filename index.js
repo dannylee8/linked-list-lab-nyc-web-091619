@@ -23,6 +23,11 @@ function nodeAt(idx, head, collection) {
   return daNode;
 }
 
-function addressAt () {
-  
+function addressAt (idx, head, collection) {
+  if (idx === 0) {
+    return head
+  } else {
+    let node = nodeAt(idx - 1, head, collection)
+    return node.next
+  }
 }
